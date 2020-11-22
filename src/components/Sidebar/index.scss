@@ -1,0 +1,30 @@
+.sidebar {
+    @include vendor('display', 'grid');
+    background: _palette(secondary);
+    padding: 0 _size(padding, lg);
+    .sidebar-item {
+        @include vendor('display', 'grid');
+        @include vendor('align-items', 'center');
+
+        margin-bottom: _size(margin, sm);
+    }
+    .sidebar-social-links {
+        @include vendor('display', 'flex');
+        @include vendor('align-items', 'center');
+        @include vendor('justify-content', 'space-around');
+        .social-icon {
+            min-width: 50px;
+            min-height: 50px;
+        }
+    }
+    &.sticky {
+        position: sticky;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        transition: 1s ease-in-out;
+        box-shadow: 0 0 40px _palette(shadow);
+        overflow: hidden scroll;
+        padding: _size(padding, md);
+    }
+}

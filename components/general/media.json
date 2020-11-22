@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_general_media",
+  "info": {
+    "name": "media",
+    "icon": "tv"
+  },
+  "options": {},
+  "attributes": {
+    "media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

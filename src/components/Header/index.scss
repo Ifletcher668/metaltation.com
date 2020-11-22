@@ -1,0 +1,95 @@
+.site-header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    .cover-image {
+        align-self: center;
+    }
+    .tagline {
+        text-align: center;
+        font-size: _size(font, md);
+    }
+    .navbar {
+        &.flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        margin-bottom: _size(margin, sm);
+        .site-navigation {
+            display: flex;
+            justify-content: space-around;
+            .nav-link {
+                font-size: _size(font, xs);
+                @include breakpoint('xlarge') {
+                    padding: _size(padding, sm);
+                    font-size: _size(font, sm);
+                }
+            }
+        }
+        .toggle-menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: _size(font, xl);
+            @include transition(_duration(transition));
+        }
+    }
+    .mobile-menu {
+        background: _palette(primary);
+        position: fixed;
+        top: 0;
+        left: 0;
+        @include vendor('display', 'flex');
+        @include vendor('flex-flow', 'column nowrap');
+        @include breakpoint('>=xxsmall') {
+            @include vendor('justify-content', 'center');
+            @include vendor('align-items', 'center');
+            width: 100%;
+        }
+        @include breakpoint('>=medium') {
+            @include vendor('justify-content', 'flex-start');
+            @include vendor('align-items', 'flex-start');
+            width: 30%;
+            .mobile-menu-header {
+                @include vendor('flex', '0');
+            }
+            .mobile-menu-links {
+                @include vendor('flex', '1');
+            }
+        }
+
+        height: 100vh;
+        z-index: 999;
+        padding: _size(padding, sm);
+        @include transition(_duration(transition));
+        transform: translateX(-100%);
+
+        &.show {
+            transform: translateX(0);
+        }
+
+        .mobile-menu-header {
+            margin-bottom: _size(margin, lg);
+            .close-btn {
+                font-size: _size(font, md);
+                color: _palette(meditation);
+                &:hover {
+                    color: darken(_palette(meditation), 20%);
+                }
+            }
+        }
+        .mobile-menu-links {
+            @include vendor('display', 'flex');
+            @include vendor('flex-flow', 'column nowrap');
+            .nav-link {
+                margin: 0 0 _size(margin, lg) 0;
+                padding-left: 5px;
+                &:hover {
+                    box-shadow: -2px 0 0 0 _palette(meditation);
+                }
+            }
+        }
+    }
+}

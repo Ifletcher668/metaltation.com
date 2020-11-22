@@ -1,0 +1,20 @@
+.section {
+    @include vendor('display', 'flex');
+    @include vendor('flex-flow', 'column nowrap');
+    .img-right {
+        @include vendor('display', 'grid');
+        @include vendor('grid-template-rows', '1fr');
+        @include vendor('grid-template-columns', 'repeat(12, 1fr)');
+        @include vendor('align-content', 'center');
+        .right {
+            grid-column: 1 / span 8;
+        }
+
+        .left {
+            grid-column: 9 / span 12;
+        }
+    }
+
+    .img-left {
+    }
+}

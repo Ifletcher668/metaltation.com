@@ -1,0 +1,33 @@
+// animations
+.animate {
+    .content,
+    .site-banner {
+        animation: pageLoad 2.2s ease-out;
+        @include keyframes(pageLoad) {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    }
+    .content {
+        .main {
+            h1 {
+                animation: slideInLeft 1s ease;
+            }
+        }
+    }
+}
+
+@include keyframes(slideInLeft) {
+    from {
+        visibility: hidden;
+        transform: translateX(-600px);
+    }
+    to {
+        visibility: visible;
+        transform: translateX(0px);
+    }
+}

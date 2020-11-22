@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_general_text_with_image",
+  "info": {
+    "name": "text with image",
+    "icon": "adjust",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "rich_text": {
+      "type": "richtext",
+      "required": true
+    },
+    "media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "is_right_side": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

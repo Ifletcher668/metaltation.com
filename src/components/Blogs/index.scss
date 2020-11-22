@@ -1,0 +1,28 @@
+.past-events {
+    padding: _size(padding, md);
+    transition: 0.2s ease;
+    a {
+        @include vendor('display', 'flex');
+        @include vendor('flex-flow', 'column nowrap');
+        @include vendor('align-items', 'center');
+        @include vendor('justify-content', 'center');
+        padding: _size(padding, sm);
+        hr {
+            width: 100%;
+        }
+    }
+    &:hover {
+        background: darken(_palette(secondary), 2%);
+        a {
+            * {
+                color: _palette(txt-dark);
+            }
+            box-shadow: 0px 0px 10px _palette(meditation);
+        }
+        @include vendor('transform', 'scale(1.05)');
+        border-radius: _size(border-radius);
+        hr {
+            opacity: 0;
+        }
+    }
+}

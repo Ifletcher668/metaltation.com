@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_general_texts",
+  "info": {
+    "name": "text",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "rich_text": {
+      "type": "richtext",
+      "required": true
+    },
+    "header": {
+      "type": "string",
+      "required": false,
+      "maxLength": 200,
+      "minLength": 5
+    }
+  }
+}

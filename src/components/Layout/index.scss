@@ -1,0 +1,39 @@
+.main,
+.content {
+    max-width: inherit;
+}
+
+.content {
+    @include breakpoint('>=large') {
+        @include vendor('display', 'flex');
+    }
+    @include breakpoint('<=laptop') {
+        @include vendor('display', 'grid');
+    }
+}
+
+// everything large screen size and up
+.main {
+    background: _palette(secondary);
+    @include breakpoint('>=desktop') {
+        border-radius: 0 0 0 _size(border-radius);
+    }
+    box-shadow: 0 0 40px _palette(shadow);
+    padding: _size(padding, lg);
+    @include vendor('flex', '1');
+}
+
+.site-banner {
+    min-height: 200px;
+    @include vendor('display', 'flex');
+    @include vendor('align-items', 'center');
+    @include vendor('justify-content', 'space-around');
+    .tagline {
+        @include vendor('display', 'flex');
+        @include vendor('flex-flow', 'column nowrap');
+        span {
+            color: _palette(secondary);
+            font-size: _size(font, sm);
+        }
+    }
+}

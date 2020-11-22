@@ -1,0 +1,22 @@
+.band {
+    .information {
+        @include vendor('display', 'flex');
+        @include vendor('flex-flow', 'row wrap');
+
+        margin-bottom: _size(margin, md);
+    }
+    // grid layout
+    .social-media {
+        grid-template-columns: 1fr 1fr;
+        .row {
+            a {
+                @include vendor('display', 'flex');
+                @include vendor('align-items', 'center');
+                @include vendor('justify-content', 'left');
+                > :nth-child(1) {
+                    margin-right: _size(margin, lg);
+                }
+            }
+        }
+    }
+}

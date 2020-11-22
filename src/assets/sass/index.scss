@@ -1,0 +1,66 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/vendor';
+@import 'libs/breakpoints';
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Mina:wght@400;700&family=New+Rocker&display=swap');
+
+@include breakpoints(
+    (
+        xxlarge: (
+            1400px,
+            1900px,
+        ),
+        xlarge: (
+            1281px,
+            1680px,
+        ),
+        large: (
+            981px,
+            1280px,
+        ),
+        medium: (
+            737px,
+            980px,
+        ),
+        small: (
+            481px,
+            736px,
+        ),
+        xsmall: (
+            361px,
+            480px,
+        ),
+        xxsmall: (
+            null,
+            360px,
+        ),
+        laptop: (
+            null,
+            1200px,
+        ),
+        desktop: (
+            1201px,
+            null,
+        ),
+    )
+);
+//base
+@import 'base/_reset';
+@import 'base/generic';
+@import 'base/page';
+@import 'base/typography';
+
+// components
+@import '../../components/Layout/index.scss';
+@import '../../components/Header/index.scss';
+@import '../../components/Footer/index.scss';
+@import '../../components/Sidebar/index.scss';
+@import '../../components/ReadingProgressBar/index.scss';
+@import '../../components/StrapiDynamicZone/index.scss';
+@import '../../components/Sections/TextWithImageGridWrapper/index.scss';
+@import '../../components/Sections/TransitionWrapper/index.scss';
+@import '../../components/Blogs/index.scss';
+
+// templates
+@import '../../templates/Blog/index.scss';

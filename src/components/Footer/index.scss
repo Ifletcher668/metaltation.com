@@ -1,0 +1,16 @@
+#footer {
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: _size(border-radius);
+    background: linear-gradient(
+        150deg,
+        #0e0c0c 5%,
+        rgba(255, 255, 255, 0.541) 55%,
+        #0e0c0c 82.42%
+    );
+
+    box-shadow: 0 0 40px _palette(shadow);
+    h6 {
+        color: _palette(primary);
+    }
+}

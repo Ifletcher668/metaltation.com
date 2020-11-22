@@ -1,0 +1,34 @@
+{
+    "collectionName": "components_general_band_informations",
+    "info": {
+        "name": "band information",
+        "icon": "balance-scale",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "band_name": {
+            "type": "string",
+            "required": true
+        },
+        "website": {
+            "type": "string",
+            "regex": "^https?://",
+            "required": false
+        },
+        "playlist": {
+            "type": "string",
+            "required": false
+        },
+        "band_bio": {
+            "type": "text",
+            "required": true
+        },
+        "social_media": {
+            "type": "component",
+            "repeatable": false,
+            "component": "general.medium",
+            "required": true
+        }
+    }
+}

@@ -1,0 +1,94 @@
+// Misc.
+$misc: (
+    z-index-base: 10000,
+    max-wrapper-styles: 6,
+);
+
+// Duration.
+$duration: (
+    menu: 0.35s,
+    transition: all 0.2s linear,
+);
+
+// Size.
+$size: (
+    border-radius: 6px,
+    element-height: 2.75em,
+    margin: (
+        xl: 4em,
+        lg: 2em,
+        md: 1.5em,
+        sm: 1em,
+    ),
+    padding: (
+        xl: 5em,
+        lg: 3em,
+        md: 2em,
+        sm: 1em,
+    ),
+    inner: 55em,
+    section-spacing: (
+        large: 3em,
+        medium: 2em,
+        small: 1.75em,
+    ),
+    wrapper-edges: (
+        large: 6.5em,
+        medium: 4.75em,
+        small: 2.5em,
+    ),
+    center-width: 90vw,
+    max-width: 1200px,
+    reading-bar: 5px,
+    font: (
+        xxl: 3em,
+        xl: 2.5em,
+        lg: 2.2em,
+        md: 1.8em,
+        sm: 1.4em,
+        xs: 1.2em,
+        xxs: 0.8em,
+    ),
+);
+
+// Font.
+$font: (
+    family: (
+        'Mina',
+        sans-serif,
+    ),
+    family-fixed: (
+        'New Rocker',
+        cursive,
+    ),
+    family-heading: (
+        'Metal Mania',
+        cursive,
+    ),
+    weight: 300,
+    weight-bold: 600,
+    weight-heading: 200,
+    weight-heading-bold: 700,
+    kern-heading: 0.2rem,
+    kern-body: 0.15rem,
+);
+
+// Palette.
+$palette: (
+    primary: #000,
+    secondary: #fff,
+    meditation: #5bbb47,
+    accent: hsl(227, 33%, 44%),
+    shadow: rgba(0, 0, 0, 0.25),
+    button: hsl(180, 20%, 88%),
+    txt-dark: #484242,
+    bold: #2c2828,
+    fg: hsl(209, 61%, 16%),
+    fg-light: hsl(209, 28%, 39%),
+    txt-med: hsl(210, 22%, 49%),
+    txt-light: hsl(186, 100%, 94%),
+    txt-accent: hsl(185, 61%, 45%),
+    border: hsl(209, 34%, 30%),
+    border-bg: rgba(255, 255, 255, 0.075),
+    border-bg-2: rgba(255, 255, 255, 0.075),
+);

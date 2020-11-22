@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "esnext",
         "lib": [
             "dom",
             "dom.iterable",
@@ -33,10 +33,7 @@
         "noImplicitReturns": true,
         "noImplicitThis": true
     },
-    "include": [
-        "src",
-        "images.d.ts"
-    ],
+    "include": ["./src/**/*", "typings"],
     "exclude": [
         "node_modules",
         "build",
